@@ -1,5 +1,9 @@
+'use client'
 const { configureStore } = require("@reduxjs/toolkit");
 
 const store = configureStore({
-    reducer: 
+    reducer: {
+        employee: employeeSlice.reducer,
+       
+      },
 })
